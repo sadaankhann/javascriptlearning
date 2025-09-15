@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadaan Khan - a Digital Marketing Agencies</title>
+    <meta name="description"
+        content="Here at Sadaan Khan we offer digitalsolutions, We make websites, Apps, We also do digital marketing.">
+</head>
+
+<body>
+    <header>
+        <!-- <p> </p> and <P> </P> is considered as same because html is not case-sensitive! -->
+
+        <big>TikkiMehndiDesign</big>
+        <br>
+        <small>a mehndi design related blog.</small>
+
+    </header>
+
+    <main>
+        <div>
+
+            <hr>
+
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIKV7CBorOofq3Q3kve4GIlI0HonMF6lJFrxJU02SzXKfbnQUtDNynR3VVVJVStzgvO1pFpbQ90vKuOQoQ8qSJiQH_l3izDkZKvG03oGR13P87Ov_P2eEsWuK62j-1xybDoHJMRqxbIRSo63b8SIuxE2hC4-5fs55Rp_RbVfLR67cwfXUAfHvIwngcdH-e/s320-rw/Sadaan%20Khan%20-%20Member%20Decoration.jpg"
+                alt="Sadaan Khan" height="100">
+
+            <!-- Hamay aik time per ya tu height ko set karna hain ya width, Dono ko aik saath nhi karna ye hamari picture ki kharab karsakhta hain -->
+
+            <p><u> Bio Data </u> </p>
+
+            <p>
+
+                Name : Sadaan Khan
+                <br>
+                Roll No: 2023f-bcs-095
+                <br>
+                Father Name: Zarrar Khan
+                <br>
+                Semester: 03
+                <br>
+                Field: Computer Science
+
+            </p>
+
+            <!-- ExternalURL/AbsoluteURL -->
+            <a href="https://www.instagram.com/">Instagram</a>
+            <br>
+            <!-- InternalLink/RelativeURL -->
+            <a href="/secondpage.html">About Us Page</a> <!--we use '/' to refer the file of the same folder -->
+
+            <!-- <a href="/foldername/secondpage.html">About Us Page</a> 
+
+      And use "/foldername/file name" to refer the file outside the folder -->
+
+            <!-- -------------------------------------------------------- -->
+
+            <!-- sub script and super script -->
+
+            <p>The formula of water is H<sub>2</sub>O.</p>
+            <p>a<sup>2</sup>+b<sup>2</sup></p>
+
+            <!-- ------------------------------------------------------------ -->
+
+            <!-- PRE TAG -->
+
+            <!-- Jab hum paragraph mein space aur next line per move hote hain tu HTML usse nhi maanta
+      aur hee aik line mein saare text ko dekha deta hain, Ignoring our extra spaces and next
+      line which we have additionally given to it. To display our extra space and next line
+      as it is, As we have set in our paragraph we can use pre tag. -->
+
+            <pre>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dicta dolorum officiis at, laboriosam ex quo, expedita
+            mollitia illo quae minus nemo iusto pariatur similique 
+            impedit necessitatibus ipsam ratione facilis maxime? 
+            Ipsam quisquam praesentium iusto tempore ullam nemo 
+            dolorem inventore, voluptatum pariatur, quos similique
+            sed? Optio soluta magnam nihil nobis officia maxime
+            deleniti error facere. Deserunt error eveniet doloribus
+            blanditiis harum.</pre>
+
+            <!-- ---------------------------------------------- -->
+
+            <!-- lists in html
+
+        HTML ke andar do tareeqe ki lists hoti hain
+
+        *Unordered List                    *Ordered List
+
+        round circles                       I, II, III, IV, V
+        and other                           a,b,c,d
+                                            1,2,3,4,5 -->
+
+
+            <p>Qualification</p>
+
+            <ol type="a">
+                <li>I am a passionate software engineer.</li>
+                <li>I love to code</li>
+                <li>I love technology</li>
+            </ol>
+
+            <!-- ------------------------------------------- -->
+
+            <!-- Tables in HTML -->
+
+            <!-- <tr> is used to create a row -->
+            <!-- <th> is used to define the header(top most row) -->
+            <!-- <td> is used to add the data inside the table -->
+
+            <table>
+                <thead>
+
+                    <caption>Attendance Chart</caption>
+
+                    <!-- To set a single header as the same header for all the columns -->
+
+                    <!-- <th colspan="3"> </th>-->
+
+                    <tr>
+                        <th>No.</th>
+                        <th>Student Name</th>
+                        <th>Attendance</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+
+                            <p>#39940</p>
+                            <p>#38484</p>
+                            <p>#73744</p>
+                            <p>#84848</p>
+                            <p>#84848</p>
+
+                        </td>
+
+                        <td>
+                            <p>Sadaan Khan</p>
+                            <p>Waqar Khan</p>
+                            <p>Saqib Khan</p>
+                            <p>Shaheer Khan</p>
+                            <p>Wasooli Khan</p>
+                        </td>
+
+                        <td>
+                            <p>Clear</p>
+                            <p>Clear</p>
+                            <p>Not Clear</p>
+                            <p>Clear</p>
+                            <p>Not Clear</p>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <!-- -------------------------------------------- -->
+
+            <!-- Form and Placeholder -->
+
+            <big><u>Enter Username and Password</u></big>
+            <br>
+            <br>
+
+            <form action="/action.php">
+
+                <div>
+
+                    <label for="username">Enter Your Username</label>
+                    <input type="text" placeholder="username" id="username" pattern="[a-zA-Z0-9]+" required autofocus>
+
+                </div>
+
+                <div>
+
+                    <label for="password">Enter Your Password</label>
+                    <input type="password" placeholder="password" id="password" pattern="[a-zA-Z0-9]+" required
+                        autofocus>
+                </div>
+
+                <div>
+                    <label for="color">Select a Color</label>
+                    <input type="color">
+                </div>
+
+
+                <!-- -------------------------------------------- -->
+
+                <!-- label and radiobuttons -->
+
+                <!-- 'value' : Jab user button per click karega tu backend ka pass uss
+          radiobutton se jurri value pass hogi, Jiske tehat woh uss per
+          further koi operation perform karwa sakhta hain.
+
+         'name' : Jab bhi hum radiobuttons create karna chahte hain jo aik
+         doosre se related ho tab hum unko 'name' mein same text dete hain.
+
+         'id' : Ye backend ke kaam aati hain.
+
+         Pehle input tag aayega phir uska label, Aur input tag mein aur label
+         mein same id deni hain, Matlab input tag ki 'id' attribute mein aur
+         label ke 'for' attribute mein, Isse agar hum uske text per bhi click
+         karenge tu woh option khud ba khud select hojayega, User ko dot
+         per click karne ki khuwaari nhi kaatni padhegi.
+
+          -->
+
+                <br>
+                <br>
+
+                <!-- ------------------------------------ -->
+
+                <!-- RadioButtons -->
+
+                <big><u>Enter Your Class</u></big>
+                <br>
+                <br>
+
+                <input type="radio" name="class" id="101" value="class11">
+                <label for="101">Class XI</label>
+
+
+                <input type="radio" name="class" id="102" value="class12">
+                <label for="102">Class XII</label>
+
+                <br>
+                <br>
+
+                <!-- ---------------------------------------------- -->
+
+
+                <!-- CheckBoxes -->
+
+                <big><u>Enter Your Subjects</u></big>
+                <br>
+                <br>
+
+                <label for="1001">
+                    <input type="checkbox" value="math$" name="subject" id="1001">Math
+                </label>
+
+                <label for="10001">
+                    <input type="checkbox" value="social$" name="subject" id="10001">Social Studies
+                </label>
+
+                <label for="1002">
+                    <input type="checkbox" value="urdu$" name="subject" id="1002">Urdu
+                </label>
+
+                <label for="1003">
+
+                    <input type="checkbox" value="english$" name="subject" id="1003">English
+
+                </label>
+
+                <label for="1004">
+
+                    <input type="checkbox" value="computer$" name="subject" id="1004">Computer
+
+                </label>
+
+
+
+                <!-- --------------------------------------------------------- -->
+
+                <!-- Creating a text area for feedback -->
+
+                <br>
+                <br>
+
+                <big><u>Give Us Some Feedback</u></big>
+
+                <br>
+                <br>
+
+                <textarea placeholder="Give Us Some Feedback" name="feedback" rows="5"></textarea>
+
+                <!-- --------------------------------------------------------- -->
+
+                <!-- DropDown -->
+
+                <br>
+                <br>
+
+                <big><u>Select Your City</u></big>
+
+                <br>
+                <br>
+
+                <select name="cities">
+                    <option value="karachi">Karachi</option>
+                    <option value="islamabad">Islamabad</option>
+                    <option value="lahore">Lahore</option>
+                    <option value="peshawar">Peshawar</option>
+                    <option value="quetta">Quetta</option>
+                </select>
+
+                <br>
+                <br>
+
+                <!-- ------------------------------------------->
+
+                <!-- To display another website on your own site -->
+
+                <iframe src="https://www.wikipedia.org" height="560" width="315"></iframe>
+
+                <!-- --------------------------------------- -->
+
+                <!-- To display a video -->
+
+                <br>
+
+                <!-- <video src="/myVideo.mp4" height="560" width="315" controls autoplay loop></video> -->
+
+                <br>
+
+                <!-- ----------------------------------------- -->
+
+                <!-- Submit Button -->
+
+                <div>
+                    <input type="submit" name="submit">
+                </div>
+
+                <div id="reset">
+
+                    <input type="reset" name="Reset">
+
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- -------------------------------------------- -->
+
+    <!-- Classes and Id -->
+
+    <!-- <div id="1000" class="group1" </div> -->
+
+    <!-- <div id="1000" class="group1" </div> -->
+
+
+    <!-- -------------------------------------------- -->
+
+    <!-- TAGS IN HTML  -->
+
+    <!-- Sementic TAGS
+
+      Sementic Tags use kare jaate hain tu improve the structure of our website. Ye SEO
+      mein bhi help karta hain. Isse website structured rehti hain. 
+      
+      1. header
+      2. main
+      3. footer
+
+      Important non semantic tags
+
+      1. div tag
+      
+      -->
+
+
+    <!-- --------------------------------------------- -->
+
+    <!-- Sections in HTML
+
+    Sections ke zarye hum apne content ko different parts mein divide karsakhte hain jokay
+    google aur hamari, Dono kee readability ko improve karta hain. Isse content structured 
+    rehta hain aur SEO mein bhi help hoti hain. -->
+
+    <!-- --------------------------------------------- -->
+
+    <!-- aside tag -->
+
+    <!-- Ye hum jab use karte hain jab hum apni website per ads display kara rahe ho, Yaani
+    koi bhi aesa data jo hum chahte hain ke google usse read na kare, Aur hamari website ke 
+    content se na uska koi taluq ho. -->
+
+    <aside>This is an ad unit.</aside>
+
+    <!-- --------------------------------------------- -->
+
+    <!-- Revisiting anchor tag
+
+        Jab hum koi link attach kare apni website per, Aur hum chahte hain ke woh link naye tab
+        mein open ho nakay same tab per, Tu hum target="_main" use karenge. -->
+
+
+    <a href="https://www.facebook.com" target="_main">Facebook</a>
+
+
+    <!-- ------------------------------------------ -->
+
+    <!-- To make our images clickable -->
+
+
+    <a href="https://www.google.com.pk" target="_main"><img
+            src="https://media.wired.com/photos/5926ffe47034dc5f91bed4e8/master/pass/google-logo.jpg" alt="google.com"
+            height="100" /></a>
+
+    <!-- ------------------------------------------------ -->
+
+    <!-- div tag -->
+
+    <!-- Ye block element hota hain, div itself kuch function perform nhi karta, Per hum div ke andar saare kaam karsakhte hain jaise ke link attach karna, paragraph add karna, image insert
+    karna aur bhaut kuch, Aur jo bhi tag hum iss mein create karenge woh screen ki poori 
+    width lega, Matlab aik <p> tag sirf Hello World display karraha ho, Lega woh poori line
+    ki width. Jab hum bhaut saare tags ke liye same operation perform karana chah rahe hotu
+    tab bhi div bhaut kaam mein aata hain -->
+
+
+    <!-- ---------------------------------------------- -->
+
+    <!-- span tag
+
+    Ye aik inline element hota hain, Matlab element poori ki poori width occupy nhi karta 
+    balke jitni space usse chahiye hoti hain, Sirf utni hee occupy karta hain. -->
+
+
+
+    <footer>
+        <div>
+
+            <p>Copyright© TikkiMehndiDesign 2025</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

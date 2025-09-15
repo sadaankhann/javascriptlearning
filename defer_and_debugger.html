@@ -1,0 +1,19 @@
+<!-- debugger: Agar meine Javascript code mein ye use kiya hain aur dev tools open hain,Tu mera code uss point per aakar ruk jayega, Agar jab tak nhi chalega jab tak ke mein usse manually run na karo. -->
+
+<!-- defer: HTML mein aik script tag hain Aur uss JavaScript file ke andar 'debugger' likha hwa hain tu aur 'script tag' ke saath 'defer' bhi likha hwa hain, Tu html parser uss 'script file' ko request tu bhej dega, Per pehle execute html file ko karega. -->
+
+<!--  For example hamare pass ak code hain, For example ye: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="sample.js" defer></script>
+</body>
+</html>
+
+<!-- Hosakhta hain ke iss 'sampe.js' file ke andar 'debugger' keyword istemaal hwa ho, Agar aesa hain tu mere poore code ki execution ruk jayegi, Ishiliye meine yaha per 'script tag' ke saath 'defer' lagaya hain, Jiski wajah se jab html parsel jab iss code ko read karna shuru karega, Aur jab woh 'script tag' waali line per phonch jayega tu woh iss file ko request tu bhej dega, Per pehle poore html cod ko run karega.  -->
