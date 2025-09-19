@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+
+            background-color: lightgreen;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            min-height: 100vh;
+
+        }
+
+        div {
+
+            font-family: Verdana;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+
+        }
+    </style>
+    <script>
+
+        const divOne = document.createElement("h2");
+        const divTwo = document.createElement("h2");
+        const divThree = document.createElement("h2");
+        // const divThree = document.createElement("p");
+        // const divFour = document.createElement("p");
+        // const divFive = document.createElement("p");
+
+
+
+        document.body.append(divOne, divTwo, divThree);
+
+
+        function one() {
+
+            return new Promise((ressolve, reject) => {
+
+                setTimeout(() => {
+                    ressolve("Initializing Hacking");
+                }, 1000);
+
+            })
+        }
+
+        async function two() {
+
+            let one_ = await one();
+            divOne.innerText = one_;
+
+            return new Promise((ressolve, reject) => {
+
+                setTimeout(() => {
+                    ressolve(".");
+                }, 1000);
+
+            })
+
+        }
+
+        async function three() {
+
+            let two_ = await two();
+            divOne.innerText += two_;
+
+            return new Promise((ressolve, reject) => {
+
+                setTimeout(() => {
+                    ressolve(".");
+                }, 1000);
+
+            })
+
+        }
+
+        async function four() {
+
+            let three_ = await three();
+            divOne.innerText += three_;
+
+            return new Promise((ressolve, reject) => {
+
+                setTimeout(() => {
+                    ressolve(".");
+                }, 1000);
+
+            })
+
+        }
+
+        async function five() {
+
+            let four_ = await four();
+            divOne.innerText += four_;
+
+            return new Promise((ressolve, reject) => {
+
+                setTimeout(() => {
+                    ressolve("Sending all the files");
+                }, 1000);
+
+            })
+
+        }
+
+        async function six() {
+
+            let six_ = await five();
+            divTwo.innerText += six_;
+
+            return new Promise((ressolve, reject) => {
+
+                setTimeout(() => {
+                    ressolve(".");
+                }, 1000);
+
+            })
+
+        }
+
+        async function seven() {
+
+            let seven_ = await six();
+            divTwo.innerText += seven_;
+
+            return new Promise((ressolve, reject) => {
+
+                setTimeout(() => {
+                    ressolve(".");
+                }, 1000);
+
+            })
+
+        }
+
+        async function eight() {
+
+            let eight_ = await seven();
+            divTwo.innerText += eight_;
+
+            return new Promise((ressolve, reject) => {
+
+                setTimeout(() => {
+                    ressolve(".");
+                }, 1000);
+
+            })
+
+        }
+
+        async function nine() {
+
+            let nine_ = await eight();
+            divTwo.innerText += nine_;
+
+            return new Promise((ressolve, reject) => {
+                setTimeout(() => {
+                    ressolve("Hacking Done");
+                }, 1000);
+            })
+
+        }
+
+        async function ten() {
+
+            let ten_ = await nine();
+            divThree.innerText += ten_;
+
+            return new Promise((ressolve, reject) => {
+                setTimeout(() => {
+                    ressolve(".");
+                }, 1000);
+            })
+
+        }
+
+        async function eleven() {
+
+            let eleven_ = await ten();
+            divThree.innerText += eleven_;
+
+            return new Promise((ressolve, reject) => {
+                setTimeout(() => {
+                    ressolve(".");
+                }, 1000);
+            })
+
+        }
+
+
+    
+
+        async function twelve() {
+
+            let twelve_ = await eleven();
+            divThree.innerText += twelve_;
+
+            return new Promise((ressolve, reject) => {
+                setTimeout(() => {
+                    ressolve(".");
+                }, 1000);
+            })
+
+        }
+
+
+        async function thirteen() {
+
+            let thirteen_ = await twelve();
+            divThree.innerText += thirteen_;
+
+            return new Promise((ressolve, reject) => {
+                setTimeout(() => {
+                    ressolve(".");
+                }, 1000);
+            })
+
+        }
+        
+
+        thirteen();
+
+    </script>
+</body>
+
+</html>
