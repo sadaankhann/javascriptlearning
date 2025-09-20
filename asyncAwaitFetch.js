@@ -1,32 +1,48 @@
-// async function hamesha aik promise return karta hain, Aur agar kisi function per await laga hwa ho, Tu jab woh ressolve ye reject nhi hojaata, Compiler aage nhi badhega.Aur
+/* async function always returns a promise, To use await() functionality we have to labelled it's function as async function.*/
+
+/*If await keyword is placed before a function, The program will not run further until that await function ressolves or rejects(These are the name of the parameters of the promise object).*/
 
 
-// 1. Istemaal kiya jaata hain takay code clean lage than .then chaining
-// 2. Error handing easy hojaati hain using try catch block.
+// 1. Used so that the code will look clean and professional.
+// 2. Error handling becomes easy using try catch block.
 
-async function getData(){
+let listOfUsers = ["Sadaan Khan", "Waqar Khan", "Saqib Khan"];
+        let askUser = "sadaan           khAn";
 
-    return new Promise((resolve, reject)=>{
+        let officialList = listOfUsers.toString().toLowerCase().replace(/\s+/g, "")
+        let officialUser = askUser.toLowerCase().replace(/\s+/g, "");
 
-        setTimeout(() =>{
-            resolve("Mil Gaya");
-        }, 3000)
+        function getUserData() {
 
-    })
+            return new Promise((ressolve, reject) => {
+                setTimeout(() => {
 
-}
+                    if (officialList.includes(officialUser)) {
+                        ressolve("Yes, A user exist by this name!");
+                    }
+                    else {
+                        reject("No, the user is not found!");
+                    }
 
-async function processData(){
+                }, 3000);
 
-    console.log("Modules Processing!");
+            })
 
-    console.log("API Work!");
+        }
 
-    let data = await getData(); // Jab tak getData() poora nhi chal jaata, program aage nhi badhega.
+        async function performingCalculationOnUser() {
 
-    console.log(data);
+            try {
+                let userData = await getUserData();
+                console.log(userData);
+            } catch (error) {
 
-    console.log("Kuch Bhi!");
+                console.log(error);
+
+            }
 
 
-}
+
+        }
+
+        performingCalculationOnUser();
